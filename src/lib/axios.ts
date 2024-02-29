@@ -1,8 +1,8 @@
 import axios from "axios";
 import {setupCache} from "axios-cache-interceptor";
 
-const BASE_URL_AUTH = "http://localhost:3000/v1/sewing";
-const BASE_URL = "http://localhost:3000/v1/sewing";
+const BASE_URL_AUTH = "https://api.vuteq.co.id/v1/sewing";
+const BASE_URL = "https://api.vuteq.co.id/v1/sewing";
 
 export default axios.create({
   baseURL: BASE_URL,
