@@ -2,7 +2,7 @@
 import {FaHome, FaUserAlt} from "react-icons/fa";
 import {useState} from "react";
 import Image from "next/image";
-import {signOut, useSession} from "next-auth/react";
+import {signOut} from "next-auth/react";
 import {useRouter} from "next/navigation";
 import {Dropdown} from "antd";
 
@@ -16,7 +16,7 @@ async function keycloakSessionLogOut() {
 
 export default function HeadTitle() {
     const [closeModal, setCloseModal] = useState(false);
-    const {data: session} = useSession()
+    // const {data: session} = useSession()
     const router = useRouter()
     const portal_url = process.env.NEXT_PUBLIC_PORTAL_URL ?? 'https://portal.vuteq.co.id'
     return (
@@ -76,7 +76,7 @@ export default function HeadTitle() {
                     <div className="flex flex-row items-center">
                         <FaUserAlt size={10}/>
                         <h2 className="font-bold text-[14px] mx-2">
-                            Halo, {session?.user?.name ?? "-"}
+                            Halo, Everyone
                         </h2>
                         {/*<BiSolidDownArrow size={10}/>*/}
                     </div>
