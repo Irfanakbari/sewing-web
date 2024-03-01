@@ -50,7 +50,7 @@ export default function HeadTitle() {
                 {/* Logo dan nama perusahaan */}
                 <div className="flex items-center gap-3">
                     <Image src="/images/img.png" alt="Logo" width={90} height={30}/>
-                    <h2 className="font-bold text-[14px] hidden md:block">PT VUTEQ INDONESIA - Ansei Delivery System</h2>
+                    <h2 className="font-bold text-[14px] hidden md:block">PT VUTEQ INDONESIA - Sewing System</h2>
                 </div>
                 <div className={`flex gap-4 hover:cursor-pointer`} onClick={()=>router.replace(portal_url)}>
                     <div className="flex flex-row items-center bg-red-500 p-1 rounded">
